@@ -22,5 +22,5 @@ install:
 
 release:
 	rm -rf .build/release
-	swift build -c release -Xswiftc -static-stdlib
+	swift build -c release
 	cmdshelf run swiftpm/release.sh xcconfig-extractor
